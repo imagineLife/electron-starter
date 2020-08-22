@@ -6,7 +6,9 @@
   "scripts": {
     "cf": "compfile",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "local": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development"
+    "local": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
+    "build": "npm run build-mac",
+    "build-mac": "electron-packager . --out=\"build\" --overwrite --icon=\"./demoIcon.icns \" --asar"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,6 @@
   },
   "homepage": "https://github.com/imagineLife/electron-starter#readme",
   "dependencies": {
-    "electron": "^9.2.1",
     "electron-devtools-installer": "^3.1.1",
     "electron-packager": "^15.1.0",
     "react": "^16.13.1",
@@ -41,6 +42,7 @@
     "babel-loader": "^8.1.0",
     "compfile": "^1.0.7",
     "css-loader": "^4.2.1",
+    "electron": "^9.2.1",
     "eslint": "^7.7.0",
     "eslint-plugin-react": "^7.20.6",
     "file-loader": "^6.0.0",
