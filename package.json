@@ -1,0 +1,27 @@
+{
+  "name": "electron-starter",
+  "version": "0.0.1",
+  "description": "React + Webpack + Electron Starter",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imagineLife/electron-starter.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "electron",
+    "babel",
+    "boilerplate",
+    "node"
+  ],
+  "author": "imagineLife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imagineLife/electron-starter/issues"
+  },
+  "homepage": "https://github.com/imagineLife/electron-starter#readme"
+}
