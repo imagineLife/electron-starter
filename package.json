@@ -7,8 +7,10 @@
     "cf": "compfile",
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
-    "build": "npm run build-mac",
-    "build-mac": "electron-packager . --out=\"build\" --overwrite --icon=\"./demoIcon.icns \" --asar"
+    "build": "npm run wp -- --config webpack.dev.config --mode production",
+    "package": "npm run build",
+    "postpackage": "electron-packager . --out=\"build\" --overwrite --icon=\"./demoIcon.icns \"",
+    "wp": "webpack"
   },
   "repository": {
     "type": "git",
