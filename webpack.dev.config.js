@@ -44,7 +44,7 @@ module.exports = {
   ],
   devtool: 'cheap-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'build'),
     stats: {
       colors: true,
       chunks: false,
